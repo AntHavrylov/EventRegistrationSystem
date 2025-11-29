@@ -28,7 +28,7 @@ This is a simple event registration system built with ASP.NET Core. It provides 
 
 1.  **Clone the repository:**
     ```sh
-    git clone <your-repository-url>
+    git clone https://github.com/AntHavrylov/EventRegistrationSystem.git
     cd EventRegistrationSystem
     ```
 
