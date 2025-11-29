@@ -53,7 +53,7 @@ namespace EventRegistrationSystem.Controllers
             {
                 return BadRequest();
             }
-            return Ok();
+            return Ok(result);
         }
 
         [Authorize]
@@ -62,8 +62,8 @@ namespace EventRegistrationSystem.Controllers
             [FromRoute] string eventId, 
             CancellationToken ct) 
         {
-            
-            return Ok();
+            var result = await _eventService.GetRegistrationsByEventIdAsync(eventId, ct);
+            return Ok(result);
         }
                 
         [HttpPost(ApiEndpoints.Events.Register)]
@@ -72,8 +72,10 @@ namespace EventRegistrationSystem.Controllers
             RegisterEventRequest request,
             CancellationToken ct)
         {
-
-            return Ok();
+            var result = await _eventService.RegisterForEventAsync(                
+                request.ToEventRegistration(eventId),
+                ct);
+            return Ok(result);
         }
     }
 

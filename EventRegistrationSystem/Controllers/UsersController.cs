@@ -21,7 +21,7 @@ namespace EventRegistrationSystem.Controllers
             _encryptionService = encryptionService;
         }
 
-        [AllowAnonymous]
+        [Authorize]
         [HttpPost(ApiEndpoints.Users.Register)]
         public async Task<IActionResult> RegisterUser(
             [FromBody] RegisterUserRequest request,
@@ -36,7 +36,6 @@ namespace EventRegistrationSystem.Controllers
             return Ok(result);
         }
 
-        [AllowAnonymous]
         [HttpPost(ApiEndpoints.Users.Login)]
         public async Task<IActionResult> LoginUser(
             [FromBody] LoginUserRequest request,
