@@ -69,6 +69,12 @@ The base URL for all endpoints is `/api`.
 | `POST` | `/events/{eventId}/register`      | Registers the current user for an event.  | None          |
 | `GET`  | `/events/{eventId}/registrations` | Gets all registrations for a specific event. | **Required**  |
 
+### Test Admin User
+
+For testing APIs that require authentication, the following admin user credentials can be used:
+
+- **Email:** `admin@`
+- **Password:** `admin123`
 
 ## Running Tests
 

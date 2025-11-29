@@ -12,14 +12,26 @@ var config = builder.Configuration;
 
 builder.Services.AddSwaggerGen(options =>
 {
+
+    options.SwaggerDoc("v1", new OpenApiInfo                                                         
+    {                                                                                                
+        Title = "Event Registration API",                                                            
+        Version = "v1",                                                                              
+        Description = 
+        """  
+        **Authenticated User Credentials:**
+        - **Email:** admin@
+        - **Password:** admin123
+        """
+    });
+
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
         Type = SecuritySchemeType.Http,
         Scheme = "Bearer",
         BearerFormat = "JWT",
-        In = ParameterLocation.Header,
-        Description = "Введи JWT токен в формате: Bearer {твой токен}"
+        In = ParameterLocation.Header        
     });
 
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
