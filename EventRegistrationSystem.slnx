@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="EventRegistrationSystem/EventRegistrationSystem.csproj" />
+  <Project Path="EventRegistrationSystemTests.Unit/EventRegistrationSystem.Tests.Unit.csproj" Id="a2637176-6466-41b3-b27a-3a05a119287c" />
 </Solution>
