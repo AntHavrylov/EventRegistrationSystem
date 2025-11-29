@@ -40,13 +40,13 @@ This is a simple event registration system built with ASP.NET Core. It provides 
 3.  **Run the application:**
     Navigate to the main project directory and use the `dotnet run` command.
     ```sh
-    dotnet run --project EventRegistrationSystem/EventRegistrationSystem.csproj
+    dotnet run
     ```
     The application will start and listen on the URLs specified in `Properties/launchSettings.json`. By default, these are typically `https://localhost:7110` and `http://localhost:5271`.
 
 4.  **Access the API documentation:**
     Once the application is running, you can access the Swagger UI for API documentation and testing at:
-    `https://localhost:7110/swagger`
+    `http://localhost:5271/swagger`
 
 ## API Endpoints
 
