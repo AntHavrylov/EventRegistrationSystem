@@ -13,7 +13,7 @@ public class ApiEndpoints
 
         public const string Create = BaseUrl;
 
-        public const string Register = $"{BaseUrl}/{{eventId}}/register";
+        public const string CreateRegistration = $"{BaseUrl}/{{eventId}}/registrations";
         public const string GetRegistrations = $"{BaseUrl}/{{eventId}}/registrations";
     }
 

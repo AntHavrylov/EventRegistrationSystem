@@ -66,7 +66,7 @@ namespace EventRegistrationSystem.Controllers
             return Ok(result);
         }
                 
-        [HttpPost(ApiEndpoints.Events.Register)]
+        [HttpPost(ApiEndpoints.Events.CreateRegistration)]
         public async Task<IActionResult> RegisterForEvent(
             [FromRoute] string eventId,
             RegisterEventRequest request,
