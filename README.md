@@ -56,7 +56,7 @@ The base URL for all endpoints is `/api`.
 
 | Method | Endpoint              | Description                  | Authorization |
 |--------|-----------------------|------------------------------|---------------|
-| `POST` | `/users/register`     | Registers a new user.        | **Required**  |
+| `POST` | `/users`              | Registers a new user.        | **Required**  |
 | `POST` | `/users/login`        | Logs in a user and returns a JWT token. | None          |
 
 ### Events
@@ -66,7 +66,7 @@ The base URL for all endpoints is `/api`.
 | `GET`  | `/events`                         | Gets a list of all events.                | None          |
 | `GET`  | `/events/{eventId}`               | Gets a single event by its ID.            | None          |
 | `POST` | `/events`                         | Creates a new event.                      | **Required**  |
-| `POST` | `/events/{eventId}/register`      | Registers the current user for an event.  | None          |
+| `POST` | `/events/{eventId}/registrations` | Registers the current user for an event.  | None          |
 | `GET`  | `/events/{eventId}/registrations` | Gets all registrations for a specific event. | **Required**  |
 
 ### Test Admin User
