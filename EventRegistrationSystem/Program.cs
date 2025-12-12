@@ -50,6 +50,7 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+var jwtKey = config["Jwt:SecurityKey"];
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options => {
         options.TokenValidationParameters = new TokenValidationParameters

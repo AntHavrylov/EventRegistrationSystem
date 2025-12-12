@@ -22,6 +22,6 @@ public class ApiEndpoints
         private const string BaseUrl = $"{ApiBase}/users";
 
         public const string Register = BaseUrl;
-        public const string Login = $"{BaseUrl}/login";
+        public const string Login = $"{BaseUrl}/sessions";
     }
 }
