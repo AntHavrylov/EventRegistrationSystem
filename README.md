@@ -72,7 +72,7 @@ The base URL for all endpoints is `/api`.
 | Method | Endpoint              | Description                  | Authorization |
 |--------|-----------------------|------------------------------|---------------|
 | `POST` | `/users`              | Registers a new user.        | **Required**  |
-| `POST` | `/users/login`        | Logs in a user and returns a JWT token. | None          |
+| `POST` | `/users/sessions`        | Logs in a user and returns a JWT token. | None          |
 
 ### Events
 
