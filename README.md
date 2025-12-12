@@ -1,4 +1,4 @@
-# Event Registration System
+# Event Registration System (PoC)
 
 This is a simple event registration system built with ASP.NET Core. It provides a web API for managing users, events, and registrations.
 
@@ -15,6 +15,21 @@ This is a simple event registration system built with ASP.NET Core. It provides 
 *   **ASP.NET Core** - Web framework for building the API
 *   **SQLite** - Database for storing data
 *   **Swagger/OpenAPI** - API documentation
+
+## Configuration
+
+Before running the application, you need to configure the JWT security key using .NET user secrets. This keeps your secret key out of the source code.
+
+1.  **Initialize user secrets:**
+    ```sh
+    dotnet user-secrets init
+    ```
+
+2.  **Set the JWT security key:**
+    ```sh
+    dotnet user-secrets set "Jwt:SecurityKey" "your-secret-key"
+    ```
+    Replace `"your-secret-key"` with a strong, unique secret key.
 
 ## Getting Started
 
